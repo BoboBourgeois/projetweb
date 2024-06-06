@@ -1,0 +1,194 @@
+/*--code contenant le corps de la page--*/
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(255, 0, 153);
+}
+
+.home{
+    height: 55vh;
+    /*color: #f1f1f1;*/
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 100;
+}
+section h1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.comment {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    border: 1px black solid;
+    box-shadow: 0 10px 10px black;
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    background: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+form{
+    width: 75%;
+	height: auto;
+	margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 10px 10px black;
+    border:  1px solid black;
+    background: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#Suggerer{
+	color: white;
+	background-color: black;
+    font-size: 150%;
+}
+#commentaire{
+    height: 70px;
+    margin-top: 5px;
+    border:  1px solid black;
+    margin-bottom: 5px;
+}
+
+/* -----------------code concernant la mise en forme du slider----------------------------*/
+.container {
+    width: 75%;
+    height: 65vh;
+    margin: auto;
+    border: 1px black solid;
+    box-shadow: 0 10px 10px black;
+    position: relative;
+}
+#img{
+    width: 100%;
+    height: 65vh;
+}
+.prev,.next{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    transform: translate(0, -75%);
+    background-color: #111;
+    transition: all .3s;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+.prev:hover, .next:hover{
+    background: #f00a3c;
+}
+.slogan{
+    width: 75%;
+    background: #f00a3c;
+    text-align: center;
+    color: #f7f6f6;
+    margin: auto;
+    line-height: normal;
+}
+/* -----------------code concernant le menu deroulant----------------------------*/
+
+.nav_toggle {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: #111;
+    align-items: center;
+}
+.line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+}
+.l1{
+    transform: translateY(-10px);
+}
+.l3{
+    transform: translateY(10px);
+}
+.nav_toggle.active  .l1{
+    transform: translateY(0px) rotate(135deg);
+}
+.nav_toggle.active  .l2{
+    opacity: 0;
+}
+.nav_toggle.active  .l3{
+    transform: translateY(0px) rotate(-135deg);
+}
+nav {
+    position: absolute;
+    width: 50vw;
+    min-height: 50vh;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #111;
+    border-left: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    /*transform: translateX(100%);*/
+    opacity: 0; 
+}
+nav.active {
+    transform: translate(0);
+    opacity: 1;
+}
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    font-size: 20px;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+}
+header nav a:hover{
+    background: green;
+}
+
+/*--pieds du page--*/
+footer {
+	margin-top: 10px;
+    height: 15vh;
+    color: white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background: black;
+    margin-bottom: 0;
+}
+footer p{
+    text-align: center;
+    font-size: 150%;
+}
