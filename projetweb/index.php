@@ -45,7 +45,7 @@
 	<aside class="comment">
 		<h1>BIENVENU(E) Dans <em>la ville de Ndéré</em></h1>
 		<p>
-			Nous vous remercions d'avoir choisi notre resto <br>
+			Merci d'avoir choisi notre restorant <br>
 			Pourquoi cette page? <br>
 			Dans le but de faciliter la réservation des table&tentes, Resto Ndéré met cette page en ligne pour que chaque reservateur
 			puisse faire une réservation sans attendre en étant dans n'importe quel endroit. <br>
